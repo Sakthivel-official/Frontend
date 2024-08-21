@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(255, 241, 220);
+  font-family: Arial, sans-serif;
+}
+.container {
+  width: 280px;
+  height: 480px;
+  box-shadow: 0px -1px 10px black;
+  background-color: #afdde5;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  transition: 0.15s;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 6px;
+}
+
+p {
+  margin: 10px;
+}
+
+.img1 {
+  object-position: top;
+  object-fit: cover;
+  width: 280px;
+  height: 280px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.container:hover {
+  transform: scale(1.05);
+  z-index: 7;
+}
