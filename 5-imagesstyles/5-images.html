@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+    <style>
+      body {
+        background-color: rgb(255, 241, 220);
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        width: 280px;
+        height: 480px;
+        box-shadow: 0px -1px 10px black;
+        background-color: #afdde5;
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 20px;
+        margin-top: 30px;
+        border-radius: 10px;
+        transition: 0.15s;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 3px;
+        margin-bottom: 6px;
+      }
+
+      p {
+        margin: 10px;
+      }
+
+      .img1 {
+        object-position: top;
+        object-fit: cover;
+        width: 280px;
+        height: 280px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .container:hover {
+        transform: scale(1.05);
+        z-index: 7;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="margin-top: 20px">Details About Animals</h1>
+
+    <div class="container" style="margin-left: 70px">
+      <img class="img1" src="lion.jpeg" />
+
+      <h1>Lion</h1>
+      <p>
+        powerfully built cat (family Felidae) that is second in size only to the
+        tiger. The proverbial “king of beasts,” the lion has been one of the
+        best-known wild animals since earliest times
+      </p>
+    </div>
+
+    <div class="container">
+      <img class="img1" src="bird.jpeg" style="object-position: center" />
+
+      <h1>Macaws</h1>
+      <p>
+        Macaws are among the most stunning species of birds. Unfortunately, the
+        beauty of these birds sometimes comes at a price. Very heavy trapping
+        for the wild bird trade.
+      </p>
+    </div>
+
+    <div class="container">
+      <img class="img1" src="tiger.jpeg" />
+
+      <h1>Tiger</h1>
+      <p>
+        The tiger (Panthera tigris) is a member of the genus Panthera and the
+        largest living cat species native to Asia. It has a powerful, muscular
+        body with a large head and paws It is traditionally classified
+      </p>
+    </div>
+
+    <div class="container">
+      <img class="img1" src="wolf.jpeg" style="object-position: center" />
+
+      <h1>Wolf</h1>
+      <p>
+        The wolf , also known as the gray wolf or grey wolf, is a large canine
+        native to Eurasia and North America. More than thirty subspecies of
+        Canis lupus have been recognized
+      </p>
+    </div>
+  </body>
+</html>
