@@ -29,7 +29,7 @@ function fibonacci(num1) {
   }
 }
 
-let num1 = -23; //pass a value for fibonacci
+let num1 = 5; //pass a value for fibonacci
 let result = fibonacci(num1);
 
-console.log(`The Fibonacci of ${num1} is: ${result}`);
+console.log(`The Fibonacci of ${num1} is: ${result}`); //Ans: 120
