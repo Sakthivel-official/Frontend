@@ -1,4 +1,4 @@
-// Q1.Reverse Integer
+// -----------------------------Q1. Reverse Integer-----------------------------------
 
 var num = 123;
 console.log("The Number:", num);
@@ -11,25 +11,41 @@ while (num > 0) {
 }
 console.log(`Reversed Number is: ${reversednum}`);
 
-// Q2.To print 1 to 100
+// -------------------------------Q2. To print 1 to 100-------------------------------
 
 for (let i = 1; i <= 100; i++) {
   console.log(i);
 }
 
-// Q3.To print fibonacci series
+// ---------------------Q3. To print Factorial of given number-----------------------
 
-function fibonacci(num1) {
+function factorial(num1) {
   if (num1 < 0) {
     return "Please Enter Positive Number";
   } else if (num1 === 0 || num1 === 1) {
     return 1;
   } else {
-    return num1 * fibonacci(num1 - 1); //recursive function - function call itself
+    return num1 * factorial(num1 - 1); //recursive function - function call itself
   }
 }
 
-let num1 = 5; //pass a value for fibonacci
-let result = fibonacci(num1);
+let num1 = 5; //pass a value for factorial
+let result = factorial(num1);
+console.log(`The Factorial of ${num1} is: ${result}`); //Ans: 120
 
-console.log(`The Fibonacci of ${num1} is: ${result}`); //Ans: 120
+// ------------------------------Q4. Fibonacci Series--------------------------------
+
+let n1 = 0;
+let n2 = 1;
+let temp;
+
+function fibonacci(num) {
+  for (let i = 0; i <= num; i++) {
+    console.log(n1); 
+    temp = n1 + n2; //swapping the value
+    n1 = n2;
+    n2 = temp;
+  }
+}
+
+fibonacci(8); //call the function and pass the input
