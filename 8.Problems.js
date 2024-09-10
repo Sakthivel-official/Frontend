@@ -18,6 +18,8 @@ console.log(arr1);
 
 let arr2 = [11, 22, 33, 44, 55, 66];
 
+console.log(arr2[0] + ":" + arr2[1]); //o/p 11:22
+
 console.log(arr2.join("-"));
 
 // 4. Include all the employee details(EMPID, EMPNAME, EMPSALARY EMPDESIGNATION) Display any 3 objects
